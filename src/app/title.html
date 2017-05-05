@@ -1,8 +1,57 @@
 <div class="title">
-  <h1 class="title-h1">'Allo, 'Allo!</h1>
-  <div>
-    <img class="title-logo" src="http://fountainjs.io/assets/imgs/yeoman.png"/>
-    <img class="title-logo" src="http://fountainjs.io/assets/imgs/fountain.png"/>
-  </div>
-  <h2 class="title-h2">Always a pleasure scaffolding your apps.</h2>
+  <section id="carousel" class="carousel hhnw-carousel" in-view="carouselFadeIntoView($inview)">
+    <input type="radio" name="radio-carousel" id="slide-1" checked>
+    <input type="radio" name="radio-carousel" id="slide-2">
+    <input type="radio" name="radio-carousel" id="slide-3">
+    <input type="radio" name="radio-carousel" id="slide-4">
+    <input type="radio" name="radio-carousel" id="slide-5">
+    <input type="radio" name="radio-carousel" id="slide-6">
+    <input type="radio" name="radio-carousel" id="slide-7">
+    <input type="radio" name="radio-carousel" id="slide-8">
+    <label for="slide-1">Slide 1</label>
+    <label for="slide-2">Slide 2</label>
+    <label for="slide-3">Slide 3</label>
+    <label for="slide-4">Slide 4</label>
+    <label for="slide-5">Slide 5</label>
+    <!--<label for="slide-6">Slide 6</label>-->
+    <!--<label for="slide-7">Slide 7</label>-->
+    <!--<label for="slide-8">Slide 8</label>-->
+    <div class="slides">
+      <div>
+        <div ng-swipe-left="nextSlide('#slide-2')" class="slide" style="background-image:url(/images/remodel/slide-01.jpg)">
+          <img src="/app/assets/images/slide-1.jpg">
+          <p><span>1 of 8</span></p>
+        </div>
+        <div ng-swipe-right="prevSlide('#slide-1')" ng-swipe-left="nextSlide('#slide-3')" class="slide" style="background-image:url(/images/remodel/slide-02.jpg)">
+          <img src="/app/assets/images/slide-2.jpg">
+          <p><span>2 of 8</span><!--  Slide 2 comments here --></p>
+        </div>
+        <div ng-swipe-right="prevSlide('#slide-2')" ng-swipe-left="nextSlide('#slide-4')" class="slide" style="background-image:url(/images/remodel/slide-03.jpg)">
+          <img src="/app/assets/images/slide-3.jpg">
+          <p><span>3 of 8</span><!--  Slide 3 comments here --></p>
+        </div>
+        <div ng-swipe-right="prevSlide('#slide-3')" ng-swipe-left="nextSlide('#slide-5')" class="slide" style="background-image:url(/images/remodel/slide-04.jpg)">
+          <img src="/app/assets/images/slide-4.jpg">
+          <p><span>4 of 8</span><!--  Slide 4 comments here  --></p>
+        </div>
+        <div  ng-swipe-right="prevSlide('#slide-4')" ng-swipe-left="nextSlide('#slide-6')" class="slide" style="background-image:url(/images/remodel/slide-05.jpg)">
+          <img src="/app/assets/images/slide-5.jpg">
+          <p><span>5 of 8</span><!--  Slide 5 comments here --></p>
+        </div>
+        <!--<div ng-swipe-right="prevSlide('#slide-5')" ng-swipe-left="nextSlide('#slide-7')" class="slide" style="background-image:url(/images/remodel/slide-06.jpg)">-->
+          <!--<img src="/images/remodel/slide-06.jpg">-->
+          <!--<p><span>6 of 8</span>&lt;!&ndash;  Slide 6 comments here &ndash;&gt;</p>-->
+        <!--</div>-->
+        <!--<div ng-swipe-right="prevSlide('#slide-6')" ng-swipe-left="nextSlide('#slide-8')" class="slide" style="background-image:url(/images/remodel/slide-07.jpg)">-->
+          <!--<img src="/images/remodel/slide-07.jpg">-->
+          <!--<p><span>7 of 8</span>&lt;!&ndash;  Slide 7 comments here &ndash;&gt;</p>-->
+        <!--</div>-->
+        <!--<div ng-swipe-right="prevSlide('#slide-7')" ng-swipe-left="prevSlide()" class="slide" style="background-image:url(/images/remodel/slide-08.jpg)">-->
+          <!--<img src="/images/remodel/slide-08.jpg">-->
+          <!--<p><span>8 of 8</span>&lt;!&ndash;  Slide 8 comments here &ndash;&gt;</p>-->
+        <!--</div>-->
+
+      </div>
+    </div>
+  </section>
 </div>
